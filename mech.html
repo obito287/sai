@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MECH Department Feedback</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Mechanical Engineering Department Feedback</h1>
+    <form id="feedbackForm">
+        <label for="teacher">Select a Teacher:</label><br>
+        <select id="teacher" name="teacher" required>
+            <option value="">--Choose a Teacher--</option>
+            <option value="dr_brown">Dr. George Brown</option>
+            <option value="prof_wilson">Prof. Hannah Wilson</option>
+            <option value="dr_moore">Dr. Ian Moore</option>
+            <!-- Add more MECH teachers as needed -->
+        </select>
+
+        <!-- Rating and Feedback (same as before) -->
+         <!-- Rating -->
+<p>Rate the Teaching Quality:</p>
+<div class="rating">
+    <input type="radio" id="star5" name="rating" value="5" required>
+    <label for="star5" title="Excellent">★</label>
+
+    <input type="radio" id="star4" name="rating" value="4">
+    <label for="star4" title="Good">★</label>
+
+    <input type="radio" id="star3" name="rating" value="3">
+    <label for="star3" title="Average">★</label>
+
+    <input type="radio" id="star2" name="rating" value="2">
+    <label for="star2" title="Poor">★</label>
+
+    <input type="radio" id="star1" name="rating" value="1">
+    <label for="star1" title="Very Poor">★</label>
+</div>
+<!-- Feedback Textarea -->
+<label for="feedback">Your Feedback:</label><br>
+<textarea id="feedback" name="feedback" rows="5" placeholder="Share your thoughts..." required></textarea><br>
+
+<!-- Submit Button -->
+<button type="submit">Submit Feedback</button>
+
+
+        <script src="script.js"></script>
+    </form>
+</body>
+</html>

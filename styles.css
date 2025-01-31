@@ -1,0 +1,93 @@
+body {
+    background-color: #f9f9f9;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    margin-top: 50px;
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.departments {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dept-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 20px 30px;
+    margin: 15px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.5em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.dept-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+    margin-top: 30px;
+}
+
+label {
+    font-weight: bold;
+}
+
+select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-around;
+    max-width: 300px;
+    margin: 0 auto 20px auto;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 2em;
+    color: #ddd;
+    cursor: pointer;
+}
+
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
+    color: #ffca08;
+}
+
+button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}

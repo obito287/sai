@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSE Department Feedback</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>CSE Department Feedback</h1>
+    <form id="feedbackForm">
+        <!-- Teacher Selection -->
+        <label for="teacher">Select a Teacher:</label><br>
+        <select id="teacher" name="teacher" required>
+            <option value="">--Choose a Teacher--</option>
+            <option value="teacher1">Dr. Allen</option>
+            <option value="teacher2">Prof. Baker</option>
+            <!-- Add more teachers specific to CSE -->
+        </select>
+
+        <!-- Rating -->
+        <p>Rate the Teaching Quality:</p>
+        <div class="rating">
+            <input type="radio" id="star5" name="rating" value="5" required>
+            <label for="star5" title="Excellent">5 stars</label>
+
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4" title="Good">4 stars</label>
+
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3" title="Average">3 stars</label>
+
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2" title="Poor">2 stars</label>
+
+            <input type="radio" id="star1" name="rating" value="1">
+            <label for="star1" title="Very Poor">1 star</label>
+        </div>
+
+        <!-- Feedback Textarea -->
+        <label for="feedback">Your Feedback:</label><br>
+        <textarea id="feedback" name="feedback" rows="5" cols="50" placeholder="Share your thoughts..." required></textarea><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit Feedback</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
